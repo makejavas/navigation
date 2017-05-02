@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>管理员身份认证</title>
+</head>
+<body>
+    管理员登录<br>
+    用户名：<input><br>
+    密码：<input><br>
+</body>
+</html>

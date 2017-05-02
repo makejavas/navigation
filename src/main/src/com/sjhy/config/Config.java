@@ -6,6 +6,7 @@ import com.jfinal.plugin.activerecord.dialect.PostgreSqlDialect;
 import com.jfinal.plugin.druid.DruidPlugin;
 import com.jfinal.render.ViewType;
 import com.jfinal.template.Engine;
+import com.sjhy.admin.controller.IndexController;
 import com.sjhy.controller.TestController;
 import com.sjhy.model.User;
 
@@ -22,6 +23,9 @@ public class Config extends JFinalConfig {
     public void configRoute(Routes routes) {
         routes.setBaseViewPath("WEB-INF/vm");
         routes.add("/", TestController.class);
+
+        //后台管理路由配置
+        routes.add("/admin", IndexController.class);
     }
 
     public void configEngine(Engine engine) {
